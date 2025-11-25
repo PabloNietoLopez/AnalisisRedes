@@ -1,0 +1,1579 @@
+<html class=" responsive" lang="es"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>Desarrollador de Steam: Nicalis</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	
+	
+	<link href="https://store.fastly.steamstatic.com/public/shared/css/motiva_sans.css?v=YzJgj1FjzW34&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/shared_global.css?v=JnJq5zVNmuba&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/buttons.css?v=ecbk11GZ8OUy&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/store.css?v=kIy5tRldcNht&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/browse.css?v=i6TQ7oIBXK-E&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/curators_common.css?v=iQHE04JIw48n&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/curator_recommendations.css?v=-XJoesKVEV_t&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/curator_announcements.css?v=9a5vQd1fXytB&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/shared_responsive.css?v=r6syZUh8_Rpk&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=NXam5zydzNu8&amp;l=spanish&amp;_cdn=fastly"></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript">VALVE_PUBLIC_PATH = "https:\/\/store.fastly.steamstatic.com\/public\/";</script><script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/tooltip.js?v=QYkT4eS5mbTN&amp;l=spanish&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/shared_global.js?v=a61kMXHHrxef&amp;l=spanish&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/auth_refresh.js?v=w6QbwI-5-j2S&amp;l=spanish&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/main.js?v=qbJiYDfC8gL0&amp;l=spanish&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/dynamicstore.js?v=gt3Xdn9_2FUB&amp;l=spanish&amp;_cdn=fastly"></script>
+
+<script type="text/javascript">
+	var __PrototypePreserve=[];
+	__PrototypePreserve[0] = Array.from;
+	__PrototypePreserve[1] = Array.prototype.filter;
+	__PrototypePreserve[2] = Array.prototype.flatMap;
+	__PrototypePreserve[3] = Array.prototype.find;
+	__PrototypePreserve[4] = Array.prototype.some;
+	__PrototypePreserve[5] = Function.prototype.bind;
+	__PrototypePreserve[6] = HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/prototype-1.7.js?v=npJElBnrEO6W&amp;l=spanish&amp;_cdn=fastly"></script>
+<script type="text/javascript">
+	Array.from = __PrototypePreserve[0] || Array.from;
+	Array.prototype.filter = __PrototypePreserve[1] || Array.prototype.filter;
+	Array.prototype.flatMap = __PrototypePreserve[2] || Array.prototype.flatMap;
+	Array.prototype.find = __PrototypePreserve[3] || Array.prototype.find;
+	Array.prototype.some = __PrototypePreserve[4] || Array.prototype.some;
+	Function.prototype.bind = __PrototypePreserve[5] || Function.prototype.bind;
+	HTMLElement.prototype.scrollTo = __PrototypePreserve[6] || HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript">
+	var __ScriptaculousPreserve=[];
+	__ScriptaculousPreserve[0] = Array.from;
+	__ScriptaculousPreserve[1] = Function.prototype.bind;
+	__ScriptaculousPreserve[2] = HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/scriptaculous/_combined.js?v=lz_99vci25ux&amp;l=spanish&amp;_cdn=fastly&amp;load=effects,controls,slider"></script>
+<script type="text/javascript">
+	Array.from = __ScriptaculousPreserve[0] || Array.from;
+	Function.prototype.bind = __ScriptaculousPreserve[1] || Function.prototype.bind;
+	HTMLElement.prototype.scrollTo = __ScriptaculousPreserve[2] || HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) {
+				$J.data( document, 'x_readytime', new Date().getTime() );
+				$J.data( document, 'x_oldref', GetNavCookie() );
+				SetupTooltips( { tooltipCSSClass: 'store_tooltip'} );
+		});
+		</script><script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/curator_common.js?v=NbiyPbhj3Vwo&amp;l=spanish&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/curator_recommendations.js?v=C3xnieg6vltO&amp;l=spanish&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/app_tagging.js?v=A1abDcwx9QuO&amp;l=spanish&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/curator_landing.js?v=IksvwIUC5JCT&amp;l=spanish&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=6LjeP8CfLBgv&amp;l=spanish&amp;_cdn=fastly"></script>
+
+						<meta name="twitter:card" content="summary">
+					<meta name="Description" content="Developer of The Binding of Isaac: Rebirth and publisher of some of your favorite video games!">
+			
+	<meta name="twitter:site" content="@steam">
+
+						<meta property="og:title" content="Desarrollador de Steam: Nicalis">
+					<meta property="twitter:title" content="Desarrollador de Steam: Nicalis">
+					<meta property="og:type" content="website">
+					<meta property="fb:app_id" content="105386699540688">
+					<meta property="og:site" content="Steam">
+					<meta property="og:description" content="Developer of The Binding of Isaac: Rebirth and publisher of some of your favorite video games!">
+					<meta property="twitter:description" content="Developer of The Binding of Isaac: Rebirth and publisher of some of your favorite video games!">
+			
+	
+			<link rel="image_src" href="https://avatars.fastly.steamstatic.com/ef1904218b5ef0c5da6722e6c5bab8bc57fe0a04_full.jpg">
+		<meta property="og:image" content="https://avatars.fastly.steamstatic.com/ef1904218b5ef0c5da6722e6c5bab8bc57fe0a04_full.jpg">
+		<meta name="twitter:image" content="https://avatars.fastly.steamstatic.com/ef1904218b5ef0c5da6722e6c5bab8bc57fe0a04_full.jpg">
+				
+	
+	
+	
+	
+	</head>
+<body class="v6 game_bg curator creatorhome responsive_page ">
+
+
+<div class="responsive_page_frame with_header">
+						<div role="navigation" class="responsive_page_menu_ctn mainmenu" aria-label="Menú móvil">
+				<div class="responsive_page_menu" id="responsive_page_menu">
+										<div class="mainmenu_contents">
+						<div class="mainmenu_contents_items">
+															<a class="menuitem" href="https://store.steampowered.com/login/?redir=developer%2FNicalis%3Fsnr%3D1_5_9__2000&amp;redir_ssl=1&amp;snr=1_1056_4_18_global-header">
+									Iniciar sesión								</a>
+															<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158" data-tooltip-type="selector" data-tooltip-content=".submenu_Store">
+				Tienda			</a>
+			<div class="submenu_Store" style="display: none;" data-submenuid="Store">
+														<a class="submenuitem" href="https://store.steampowered.com/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158">
+						Inicio											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158">
+						Lista de descubrimientos											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/wishlist/">
+						Lista de deseados											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158">
+						Tienda de puntos											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158">
+						Noticias											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158">
+						Estadísticas											</a>
+							</div>
+										<a class="menuitem supernav" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_Community">
+				Comunidad			</a>
+			<div class="submenu_Community" style="display: none;" data-submenuid="Community">
+														<a class="submenuitem" href="https://steamcommunity.com/">
+						Inicio											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/discussions/">
+						Discusiones											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/workshop/">
+						Workshop											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/market/">
+						Mercado											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">
+						Retransmisiones											</a>
+							</div>
+										<a class="menuitem " href="https://store.steampowered.com/about/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158">
+				Acerca de			</a>
+										<a class="menuitem " href="https://help.steampowered.com/es/">
+				Soporte			</a>
+			
+							<div class="minor_menu_items">
+																								<div class="menuitem change_language_action">
+									Cambiar idioma								</div>
+																																	<a class="menuitem" href="https://store.steampowered.com/mobile" target="_blank" rel="noreferrer">Descargar Steam&nbsp;Mobile</a>
+																									<div class="menuitem" onclick="Responsive_RequestDesktopView();">
+										Ver versión clásica									</div>
+															</div>
+						</div>
+						<div class="mainmenu_footer_spacer  "></div>
+						<div class="mainmenu_footer">
+															<div class="mainmenu_footer_logo"><img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"></div>
+								© Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE.&nbsp;UU. y otros países.								<span class="mainmenu_valve_links">
+									<a href="https://store.steampowered.com/privacy_agreement/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158" target="_blank">Política de Privacidad</a>
+									&nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">Información legal</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/subscriber_agreement/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158" target="_blank">Acuerdo de Suscriptor a Steam</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/steam_refunds/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158" target="_blank">Reembolsos</a>
+								</span>
+													</div>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_local_menu_tab"></div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu" id="responsive_page_local_menu" data-panel="{&quot;onOptionsActionDescription&quot;:&quot;Filtrar&quot;,&quot;onOptionsButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;,&quot;onCancelButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;}">
+				<div class="localmenu_content" data-panel="{&quot;maintainY&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+				</div>
+			</div>
+		</div>
+
+
+
+					<div class="responsive_header">
+				<div class="responsive_header_content">
+					<div id="responsive_menu_logo">
+						<img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%">
+											</div>
+					<div class="responsive_header_logo">
+						<a href="https://store.steampowered.com/?snr=1_1056_4_18_global-responsive-menu&amp;curator_clanid=6877158">
+															<img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM">
+													</a>
+					</div>
+				</div>
+			</div>
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+
+		<div class="responsive_fixonscroll_ctn nonresponsive_hidden ">
+		</div>
+	
+	<div class="responsive_page_content">
+
+		<div role="banner" id="global_header" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+	<div class="content">
+		<div class="logo">
+			<span id="logo_holder">
+									<a href="https://store.steampowered.com/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158" aria-label="Enlace a la página de inicio de Steam">
+						<img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44" alt="Enlace a la página de inicio de Steam">
+					</a>
+							</span>
+		</div>
+
+			<div role="navigation" class="supernav_container" aria-label="Menú global">
+								<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158" data-tooltip-type="selector" data-tooltip-content=".submenu_Store">
+				TIENDA			</a>
+			<div class="submenu_Store" style="display: none;" data-submenuid="Store">
+														<a class="submenuitem" href="https://store.steampowered.com/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158">
+						Inicio											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158">
+						Lista de descubrimientos											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/wishlist/">
+						Lista de deseados											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158">
+						Tienda de puntos											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158">
+						Noticias											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158">
+						Estadísticas											</a>
+							</div>
+										<a class="menuitem supernav" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_Community">
+				COMUNIDAD			</a>
+			<div class="submenu_Community" style="display: none;" data-submenuid="Community">
+														<a class="submenuitem" href="https://steamcommunity.com/">
+						Inicio											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/discussions/">
+						Discusiones											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/workshop/">
+						Workshop											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/market/">
+						Mercado											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">
+						Retransmisiones											</a>
+							</div>
+										<a class="menuitem " href="https://store.steampowered.com/about/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158">
+				Acerca de			</a>
+										<a class="menuitem " href="https://help.steampowered.com/es/">
+				SOPORTE			</a>
+				</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'destroyWhenDone': false, 'tooltipClass': 'supernav_content', 'offsetY':-6, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		<div id="global_actions">
+			<div role="navigation" id="global_action_menu" aria-label="Menú de la cuenta">
+									<a class="header_installsteam_btn header_installsteam_btn_green" href="https://store.steampowered.com/about/?snr=1_1056_4_18_global-header&amp;curator_clanid=6877158">
+						<div class="header_installsteam_btn_content">
+							Instalar Steam						</div>
+					</a>
+				
+				
+									<a class="global_action_link" href="https://store.steampowered.com/login/?redir=developer%2FNicalis%3Fsnr%3D1_5_9__2000&amp;redir_ssl=1&amp;snr=1_1056_4_18_global-header">iniciar sesión</a>
+											&nbsp;|&nbsp;
+						<span class="pulldown global_action_link" id="language_pulldown" onclick="ShowMenu( this, 'language_dropdown', 'right' );">idioma</span>
+						<div class="popup_block_new" id="language_dropdown" style="display: none;">
+							<div class="popup_body popup_menu">
+																																					<a class="popup_menu_item tight" href="?l=schinese&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'schinese' ); return false;">简体中文 (chino simplificado)</a>
+																													<a class="popup_menu_item tight" href="?l=tchinese&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'tchinese' ); return false;">繁體中文 (chino tradicional)</a>
+																													<a class="popup_menu_item tight" href="?l=japanese&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'japanese' ); return false;">日本語 (japonés)</a>
+																													<a class="popup_menu_item tight" href="?l=koreana&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'koreana' ); return false;">한국어 (coreano)</a>
+																													<a class="popup_menu_item tight" href="?l=thai&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'thai' ); return false;">ไทย (tailandés)</a>
+																													<a class="popup_menu_item tight" href="?l=bulgarian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'bulgarian' ); return false;">Български (búlgaro)</a>
+																													<a class="popup_menu_item tight" href="?l=czech&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'czech' ); return false;">Čeština (checo)</a>
+																													<a class="popup_menu_item tight" href="?l=danish&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'danish' ); return false;">Dansk (danés)</a>
+																													<a class="popup_menu_item tight" href="?l=german&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'german' ); return false;">Deutsch (alemán)</a>
+																													<a class="popup_menu_item tight" href="?l=english&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'english' ); return false;">English (inglés)</a>
+																																							<a class="popup_menu_item tight" href="?l=latam&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'latam' ); return false;">Español de Hispanoamérica</a>
+																													<a class="popup_menu_item tight" href="?l=greek&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'greek' ); return false;">Ελληνικά (griego)</a>
+																													<a class="popup_menu_item tight" href="?l=french&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'french' ); return false;">Français (francés)</a>
+																													<a class="popup_menu_item tight" href="?l=italian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'italian' ); return false;">Italiano</a>
+																													<a class="popup_menu_item tight" href="?l=indonesian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'indonesian' ); return false;">Bahasa Indonesia (indonesio)</a>
+																													<a class="popup_menu_item tight" href="?l=hungarian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'hungarian' ); return false;">Magyar (húngaro)</a>
+																													<a class="popup_menu_item tight" href="?l=dutch&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'dutch' ); return false;">Nederlands (holandés)</a>
+																													<a class="popup_menu_item tight" href="?l=norwegian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'norwegian' ); return false;">Norsk (noruego)</a>
+																													<a class="popup_menu_item tight" href="?l=polish&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'polish' ); return false;">Polski (polaco)</a>
+																													<a class="popup_menu_item tight" href="?l=portuguese&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'portuguese' ); return false;">Português (Portugués de Portugal)</a>
+																													<a class="popup_menu_item tight" href="?l=brazilian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'brazilian' ); return false;">Português-Brasil (portugués de Brasil)</a>
+																													<a class="popup_menu_item tight" href="?l=romanian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'romanian' ); return false;">Română (rumano)</a>
+																													<a class="popup_menu_item tight" href="?l=russian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'russian' ); return false;">Русский (ruso)</a>
+																													<a class="popup_menu_item tight" href="?l=finnish&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'finnish' ); return false;">Suomi (finés)</a>
+																													<a class="popup_menu_item tight" href="?l=swedish&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'swedish' ); return false;">Svenska (sueco)</a>
+																													<a class="popup_menu_item tight" href="?l=turkish&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'turkish' ); return false;">Türkçe (turco)</a>
+																													<a class="popup_menu_item tight" href="?l=vietnamese&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'vietnamese' ); return false;">Tiếng Việt (vietnamita)</a>
+																													<a class="popup_menu_item tight" href="?l=ukrainian&amp;snr=1_5_9__2000" onclick="ChangeLanguage( 'ukrainian' ); return false;">Українська (ucraniano)</a>
+																									<a class="popup_menu_item tight" href="https://www.valvesoftware.com/en/contact?contact-person=Translation%20Team%20Feedback" target="_blank">Comunicar un error de traducción</a>
+							</div>
+						</div>
+												</div>
+					</div>
+			</div>
+</div>
+<div id="responsive_store_nav_ctn"></div><div id="responsive_store_nav_overlay" style="display:none"><div id="responsive_store_nav_overlay_ctn"></div><div id="responsive_store_nav_overlay_bottom"></div></div><div id="responsive_store_search_overlay" style="display:none"></div><div data-cart-banner-spot="1"></div>
+		<div role="main" class="responsive_page_template_content" id="responsive_page_template_content" data-panel="{&quot;autoFocus&quot;:true}">
+
+			<div id="application_config" style="display: none;" data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;spanish&quot;,&quot;COUNTRY&quot;:&quot;ES&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/steamcommunity\/public\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/&quot;,&quot;VIDEO_CDN_URL&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/steamcommunity\/public\/assets\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;USE_POPUPS&quot;:false,&quot;STORE_ICON_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/&quot;,&quot;STORE_ITEM_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/store.steampowered.com\/\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1735024986,&quot;PAGE_TIMESTAMP&quot;:1735402181,&quot;IN_TENFOOT&quot;:false,&quot;IN_GAMEPADUI&quot;:false,&quot;IN_CHROMEOS&quot;:false,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;windows&quot;,&quot;BASE_URL_STORE_CDN_ASSETS&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/store\/&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.fastly.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Store&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.fastly.steamstatic.com\/&quot;,&quot;SNR&quot;:&quot;1_1056_4_18&quot;}" data-userinfo="{&quot;logged_in&quot;:false,&quot;country_code&quot;:&quot;ES&quot;}" data-broadcastuser="{&quot;success&quot;:1,&quot;bHideStoreBroadcast&quot;:false}" data-store_user_config="{&quot;webapi_token&quot;:&quot;&quot;,&quot;shoppingcart&quot;:null,&quot;originating_navdata&quot;:null}"></div><div id="application_root"><div class="_2uHYtSBLSS1MxFonkOXr0O"></div></div><script>window.g_wapit="";</script><link href="https://store.fastly.steamstatic.com/public/css/applications/store/main.css?v=soCB1ab5orw4&amp;l=spanish&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/manifest.js?v=gluPoPwes28e&amp;l=spanish&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/libraries~b28b7af69.js?v=vNpZeOuePA4R&amp;l=spanish&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/main.js?v=XhrX2wJwXkim&amp;l=spanish&amp;_cdn=fastly"></script>
+<script>
+	var g_pagingData = {"query":"","total_count":22,"pagesize":10,"prefix":"Recommendations","clanid":6877158};
+
+			var g_clanGroupsWGAuthToken = '';
+		CuratorSetListDetails( [] );
+	SetMyOtherCreatorHomes( null );
+	SetCuratorSteamID( '103582791436398566' );
+	$J( document ).ready( function() {
+		var rgFacets = $J.parseJSON( '{"tagids":{"19":"21","492":"18","4182":"16","3871":"13","3964":"13","1756":"10","21":"9","1625":"9","4026":"9","4004":"8","3859":"7","9":"6","42804":"6","122":"5","1716":"5","1720":"5","3959":"5","4711":"5","597":"4","4136":"4"},"type":{"game":"22","dlc":"4"}}' );
+		UpdateFilterTagCounts( rgFacets, 'type', 'filter_app_type_num_' );
+		//TODO: Query Expansion
+		UpdateFilterTagCounts( rgFacets, 'tagids', 'filter_tagid_num_', 26 );
+		UpdateFilterTagCounts( rgFacets, 'recommend', 'filter_recommend_type_', 26 );
+
+		$J("#client_filter").show();
+		CuratorLanding_SetupMicrotrailer();
+	});
+
+</script>
+
+	<script type="text/javascript">
+	var g_strCuratorBaseURL = "https:\/\/store.steampowered.com\/developer\/Nicalis\/";
+	var g_strCuratorAdminURL = g_strCuratorBaseURL + 'admin/';
+
+	var g_strCuratorCommunityBaseURL = "https:\/\/steamcommunity.com\/groups\/nicalis";
+			var g_strCommunityCDNUrl = "https:\/\/clan.fastly.steamstatic.com\/images\/6877158\/";
+		var g_bCanCurateApps = false;
+	var g_bCanUploadHeader = true;
+	var g_bIsCreatorHome = true;
+	var g_bIsDLCPage = false;
+	var g_bCanUpdateAvatar = true;
+	var g_mapAppIDToAppNameSearch = null;
+</script>
+
+
+
+		<div class="background_header_ctn" style="background-image:url(https://clan.fastly.steamstatic.com/images/6877158/6966d7f65328a62894932fc5ff115fc2a2b22c9c.png)">
+
+			<div class="background_gradient_ctn">&nbsp;</div>
+		</div>
+	
+
+	
+	
+    	    <div class="responsive_store_nav_ctn_spacer"><div id="store_header" role="navigation" aria-label="Menú de la tienda" class="dlc">
+		<div class="content">
+			<div id="store_controls">
+				<div class="cart_status_flex" id="cart_status_data">
+															
+													<div data-featuretarget="shoppingcart-count-widget" data-props="{&quot;count&quot;:0}"></div>															</div>
+			</div>
+					</div>
+	</div></div>
+    
+				<script type="text/javascript">
+			$J( function() {
+				BindAutoFlyoutEvents();
+
+				var $Window = $J(window);
+				var $Header = $J('#store_header');
+				var $ResponsiveNavWindowShadeCtn = $J('#responsive_store_nav_ctn');
+				var $ResponsiveNavOverlay = $J('#responsive_store_nav_overlay');
+				var $ResponsiveNavOverlayCtn = $J('#responsive_store_nav_overlay_ctn');
+				var $ResponsiveNavOverlayBottom = $J('#responsive_store_nav_overlay_bottom');
+				var $HeaderWrapper;
+				$Window.on('Responsive_SmallScreenModeToggled.StoreMenu', function() {
+					var bUseSmallScreenMode = window.UseSmallScreenMode && window.UseSmallScreenMode();
+
+											if ( !$HeaderWrapper )
+							$HeaderWrapper = $Header.wrap( $J('<div/>', {'class': 'responsive_store_nav_ctn_spacer'} ) ).parent();
+
+						if ( bUseSmallScreenMode )
+							$ResponsiveNavWindowShadeCtn.append( $Header );
+						else
+							$HeaderWrapper.append( $Header );
+
+
+						if ( bUseSmallScreenMode )
+						{
+							$Header.css( 'visibility', 'hidden' );
+							$Header.show();
+
+							var nStartingScrollPosition = $J('#store_header').height();
+							if ( $Window.scrollTop() < nStartingScrollPosition )
+								$Window.scrollTop( nStartingScrollPosition );
+
+							$Header.css('visibility', 'visible');
+						}
+									} );
+
+				window.setTimeout( function() { $J(window).trigger('Responsive_SmallScreenModeToggled.StoreMenu'); }, 0 );
+
+										var g_rgUserPreferences = {
+							excluded_tags : [],
+							excluded_content_descriptors : [3,4]						};
+						
+													g_rgUserPreferences['use_store_query'] = 1;
+						
+						g_rgUserPreferences['use_search_spellcheck'] = 1;
+						g_rgUserPreferences['search_creators_and_tags'] = 1;
+
+						if( $J('#searchform').length > 0 )
+						{
+							// default search support where the web page includes the search edit control
+							EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_1056_4_18', 'ES', 1, 'spanish', g_rgUserPreferences, '26805258' );
+						}
+						else
+						{
+							// search support for the mobile client.  the mobile client has a native search edit control but relies on the web content to perform the query and show results
+													}
+				
+				// make genre categories expand/collapse on mobile
+				$J(document).on( 'click', '.popup_genre_expand_header', function ( event ) {
+					if ( !UseSmallScreenMode() )
+						return;
+
+					event.preventDefault();
+					var $Element = $J(this);
+					var $Target = $J('.popup_genre_expand_content[data-genre-group=' + $Element.data('genre-group') + ']' );
+					if ( $Element.data('group-expanded') )
+					{
+						$Target.slideUp();
+						$Element.data( 'group-expanded', false );
+					}
+					else
+					{
+						$Target.slideDown();
+						$Element.data( 'group-expanded', true );
+					}
+				});
+			} );
+		</script>
+	<script type="text/javascript">
+	var g_AccountID = 0;
+	var g_sessionID = "208fab947c7529edbda35ac9";
+	var g_ServerTime = 1735402181;
+	var g_bUseNewCartAPI = true;
+
+	$J( InitMiniprofileHovers( 'https%3A%2F%2Fstore.steampowered.com%2F' ) );
+
+			$J( function() { InitCookiePreferencesPopup() } );
+	
+			GStoreItemData.AddNavParams({
+			__page_default: "1_1056_4_18",
+			__page_default_obj: {"domain":"store.steampowered.com","controller":"curator","method":"default","submethod":"creator","feature":null,"depth":null,"countrycode":"ES","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":false,"is_utm":null},
+			__originating_obj: null,
+			storemenu_recommendedtags: "1_1056_4_18_17"		});
+		GDynamicStore.Init( 0, false, "", {"primary_language":null,"secondary_languages":null,"platform_windows":null,"platform_mac":null,"platform_linux":null,"timestamp_updated":null,"hide_store_broadcast":null,"review_score_preference":null,"timestamp_content_descriptor_preferences_updated":null,"provide_deck_feedback":null,"additional_languages":null}, 'ES',
+			{"bNoDefaultDescriptors":false} );
+		GStoreItemData.SetCurrencyFormatter( function( nValueInCents, bWholeUnitsOnly ) { var fnBase = function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ",", " "); return format; };var strNegativeSymbol = '';	if ( nValueInCents < 0 ) { strNegativeSymbol = '-'; nValueInCents = -nValueInCents; }return strNegativeSymbol + fmt( nValueInCents, bWholeUnitsOnly ) + "\u20ac";}; return fnBase( nValueInCents, bWholeUnitsOnly ).replace(  ',00', ',--' ); } );
+		GStoreItemData.SetCurrencyMinPriceIncrement( 1 );
+	</script>
+
+<div id="curator_header_area_ctn_id" class="page_content_ctn curator_header_area_ctn">
+	<div class="page_content curator_header_ctn ">
+
+		<div class="header_area page_section" id="header_container" data-section-config="{&quot;background&quot;:&quot;6966d7f65328a62894932fc5ff115fc2a2b22c9c.png&quot;}">
+
+			<div data-panel="{&quot;autoFocus&quot;:true}" id="curator_avatar_image" class="curator_avatar_image">
+				<a href="https://store.steampowered.com/developer/Nicalis/"><img class="curator_avatar" src="https://avatars.fastly.steamstatic.com/ef1904218b5ef0c5da6722e6c5bab8bc57fe0a04_full.jpg"></a>
+			</div>
+			<div id="header_curator_details" class="curator_details">
+				
+				<h2 class="pageheader curator_name">
+					<a data-panel="{&quot;focusable&quot;:false}" href="https://store.steampowered.com/developer/Nicalis/">Nicalis</a>
+				</h2>
+
+									<div data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" class="socialmedia_accounts">
+													<span><a data-panel="[]" class="curator_url ttip" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fwww.nicalis.com" target="_blank" rel=" noopener">Nicalis.com <img class="ext" src="https://store.fastly.steamstatic.com/public/images//v6/social/external_16_white.png"></a></span>
+						
+					</div>
+
+					<div class="follow_controls">
+						<div class="follow_btn">
+							<span data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" id="CuratorUnFollowBtn_6877158" class="btn_green_steamui btn_medium following" onclick="FollowCurator( 6877158, false );" style="display: none">
+								<span><img src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_selected_green.png">Siguiendo</span>
+							</span>
+							<span data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" id="CuratorFollowBtn_6877158" class="btn_green_steamui btn_border_2px btn_medium" data-tooltip-text="Sigue a este creador para recibir una notificación por correo electrónico y en tu tienda de Steam cuando publique un nuevo juego. Las notificaciones por correo electrónico pueden desactivarse en cualquier momento." onclick="FollowCurator( 6877158, true );">
+								<span>Seguir</span>
+							</span>
+						</div>
+						<div class="follow_btn_stats">
+							<div class="num_followers" id="CuratorNumFollowers_6877158">15,407</div>
+							<div class="num_followers_text">Seguidores</div>
+						</div>
+					</div>
+
+					<div class="ignore_controls " id="IgnoreControls" data-tooltip-text="Steam no te recomendará ninguno de los juegos que publiquen o desarrollen.">
+						<div class="ignore_btn">
+							<span id="CuratorUnIgnoreBtn_6877158" class="btnv6_white_transparent  btn_medium ignoring" onclick="IgnoreCurator( 6877158, false );">
+								<span><img src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_selected_green.png">Ignorado</span>
+							</span>
+						</div>
+					</div>
+
+				
+			</div>
+		</div>
+
+			</div>
+</div>
+
+
+<div class="page_content_ctn light_container bezel ">
+
+	<div class="page_content creator_announcement_parent editable">
+		<div class="navigation_bar">
+			<a data-panel="[]" href="https://store.steampowered.com/developer/Nicalis/" class="selected featured">Destacados</a>
+			<a data-panel="[]" href="https://store.steampowered.com/developer/Nicalis/lists/" class=" option_lists">Listas</a>
+			<a data-panel="[]" href="https://store.steampowered.com/developer/Nicalis/#browse" class=" option_browse">Explorar</a>
+							<a data-panel="[]" href="https://store.steampowered.com/developer/Nicalis/about/" class=" about">Acerca de</a>
+															<div class="nav_right_side">
+				<div class="curator_report">
+					<a href="#" onclick="ShowMenu( this, 'curator_popup_body', 'right', 'bottom', true );return false" class="ttip" data-tooltip-text="Opciones">
+						<!-- <img src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_arrow_dn_for_select.png"/> -->
+						<img src="https://store.fastly.steamstatic.com/public/images/bigpicture/icon_settings.png">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		
+					<div class="page_desc">
+								<p>Developer of The Binding of Isaac: Rebirth and publisher of some of your favorite video games!</p>
+							</div>
+		
+			
+
+		<div class="popup_block_new" id="curator_popup_body" style="display: none;">
+			<div class="popup_body popup_menu">
+									<a id="curator_header_ignore" class="popup_menu_item ttip" href="javascript:IgnoreCurator( 6877158, true );HideMenu( this, 'curator_popup_body' );" data-tooltip-text="Si ignoras a un creador, Steam dejará de recomendarte cualquier juego que edite o desarrolle.">
+						<span>Ignorar a este creador</span>
+					</a>
+					<a id="curator_header_unignore" class="popup_menu_item" href="javascript:IgnoreCurator( 6877158, false );HideMenu( this, 'curator_popup_body' );" style="display: none">
+						<span>Dejar de ignorar</span>
+					</a>
+								<a href="javascript:ReportAbuse( '[g:1:6877158]' );" class="popup_menu_item ttip">
+					<span>Denunciar a este creador</span>
+				</a>
+			</div>
+		</div>
+
+
+	
+	
+	<div class="page_section type_four_row curator_paginates  " data-section-config="{&quot;type&quot;:&quot;featured_creations&quot;,&quot;listid&quot;:0,&quot;listid_label&quot;:&quot;Select...&quot;,&quot;tagid&quot;:0,&quot;tagid_label&quot;:&quot;Select...&quot;,&quot;sort&quot;:&quot;topsellers&quot;,&quot;presentation&quot;:&quot;circularlist&quot;,&quot;linkedhomepages&quot;:&quot;[]&quot;,&quot;linktitle&quot;:&quot;franchise&quot;}" data-index="0">
+	<div class="tags_list_container carousel_container paging_capsules" id="featured_carousel_0">
+		<div class="section_title_ctn"><h2>Lo más vendido</h2></div>
+		<div class="carousel_items curator_featured_tags" data-panel="{&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}">
+			<div aria-hidden="false" class="focus"><a data-ds-appid="250900" data-ds-itemkey="App_250900" data-ds-tagids="[42804,1716,492,4711,4026,3964,1720]" data-ds-descids="[5]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:250900,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250900/header_292x136.jpg?t=1731977365" alt="The Binding of Isaac: Rebirth"></div><div class="discount_block discount_block_inline" data-price-final="494" data-bundlediscount="0" data-discount="67" role="link" aria-label="67&nbsp;% de descuento. Normalmente cuesta 14,99€. Con descuento cuesta 4,94€."><div class="discount_pct">-67%</div><div class="discount_prices"><div class="discount_original_price">14,99€</div><div class="discount_final_price">4,94€</div></div></div></a><a data-ds-appid="1426300" data-ds-itemkey="App_1426300" data-ds-tagids="[19,21,122,1716,4026,4711,42804]" data-ds-descids="[2,5]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:1426300,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/1426300/The_Binding_of_Isaac_Repentance/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426300/header_292x136.jpg?t=1732645274" alt="The Binding of Isaac: Repentance"></div><div class="discount_block empty discount_block_inline"></div></a><a data-ds-appid="570660" data-ds-itemkey="App_570660" data-ds-tagids="[492,42804,4026,4711,21,19,3964]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:570660,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/570660/The_Binding_of_Isaac_Afterbirth/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570660/header_292x136.jpg?t=1573195823" alt="The Binding of Isaac: Afterbirth+"></div><div class="discount_block empty discount_block_inline"></div></a><a data-ds-appid="401920" data-ds-itemkey="App_401920" data-ds-tagids="[42804,4711,4026,492,1756,1720,1716]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:401920,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/401920/The_Binding_of_Isaac_Afterbirth/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/401920/header_292x136.jpg?t=1573196132" alt="The Binding of Isaac: Afterbirth"></div><div class="discount_block discount_block_inline" data-price-final="549" data-bundlediscount="0" data-discount="50" role="link" aria-label="50&nbsp;% de descuento. Normalmente cuesta 10,99€. Con descuento cuesta 5,49€."><div class="discount_pct">-50%</div><div class="discount_prices"><div class="discount_original_price">10,99€</div><div class="discount_final_price">5,49€</div></div></div></a></div><div aria-hidden="true"><a data-ds-appid="1148650" data-ds-itemkey="App_1148650" data-ds-tagids="[3959,492,9,21,1664,1665,4182]" data-ds-descids="[5]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:1148650,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/1148650/The_Legend_of_BumBo/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1148650/header_292x136.jpg?t=1573677510" alt="The Legend of Bum-Bo"></div><div class="discount_block discount_block_inline" data-price-final="458" data-bundlediscount="0" data-discount="69" role="link" aria-label="69&nbsp;% de descuento. Normalmente cuesta 14,79€. Con descuento cuesta 4,58€."><div class="discount_pct">-69%</div><div class="discount_prices"><div class="discount_original_price">14,79€</div><div class="discount_final_price">4,58€</div></div></div></a><a data-ds-appid="200900" data-ds-itemkey="App_200900" data-ds-tagids="[1625,1628,492,1756,3964,19,21]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:200900,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/200900/Cave_Story/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/200900/header_292x136.jpg?t=1591664460" alt="Cave Story+"></div><div class="discount_block discount_block_inline" data-price-final="299" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 14,99€. Con descuento cuesta 2,99€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">14,99€</div><div class="discount_final_price">2,99€</div></div></div></a><a data-ds-appid="565170" data-ds-itemkey="App_565170" data-ds-tagids="[19,1743,4736,4085,1773]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:565170,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/565170/Blade_Strangers/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/565170/header_292x136.jpg?t=1574734755" alt="Blade Strangers"></div><div class="discount_block discount_block_inline" data-price-final="167" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 16,79€. Con descuento cuesta 1,67€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">16,79€</div><div class="discount_final_price">1,67€</div></div></div></a><a data-ds-appid="808010" data-ds-itemkey="App_808010" data-ds-tagids="[42804,5379,3959,4758,1720,122,1625]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:808010,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/808010/Critadel/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/808010/header_292x136.jpg?t=1689716965" alt="Critadel"></div><div class="discount_block discount_block_inline" data-price-final="340" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 17,--€. Con descuento cuesta 3,40€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">17,--€</div><div class="discount_final_price">3,40€</div></div></div></a></div><div aria-hidden="true"><a data-ds-appid="447700" data-ds-itemkey="App_447700" data-ds-tagids="[597,1664,3878,3859,19,7368,1773]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:447700,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/447700/Crystal_Crisis/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447700/header_292x136.jpg?t=1589887050" alt="Crystal Crisis"></div><div class="discount_block discount_block_inline" data-price-final="167" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 16,79€. Con descuento cuesta 1,67€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">16,79€</div><div class="discount_final_price">1,67€</div></div></div></a><a data-ds-appid="995240" data-ds-itemkey="App_995240" data-ds-tagids="[19,42804,4085,3959,1646,7208,4726]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:995240,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/995240/RemiLore_Lost_Girl_in_the_Lands_of_Lore/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158"><div class="capsule headerv5"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/995240/header_292x136.jpg?t=1606894761" alt="RemiLore: Lost Girl in the Lands of Lore"></div><div class="discount_block discount_block_inline" data-price-final="339" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 33,99€. Con descuento cuesta 3,39€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">33,99€</div><div class="discount_final_price">3,39€</div></div></div></a></div>		</div>
+
+		<div class="carousel_thumbs circularlist">
+			<div class="focus"></div><div></div><div></div>		</div>
+		<div class="arrow left"><div></div></div>
+		<div class="arrow right"><div></div></div>
+	</div>
+
+	<script>
+		CreateFadingCarousel( $J('#featured_carousel_0'), 0);
+	</script>
+</div>	</div>
+
+
+<div class="page_content_ctn  ">
+	<div class="page_content editable" style="position:relative;">
+		<div class="page_section type_carousel  single_item " data-section-config="{&quot;type&quot;:&quot;featured_single_creation&quot;,&quot;listid&quot;:0,&quot;listid_label&quot;:&quot;Select...&quot;,&quot;tagid&quot;:1716,&quot;tagid_label&quot;:&quot;Roguelike&quot;,&quot;sort&quot;:&quot;topsellers&quot;,&quot;presentation&quot;:&quot;featuredcarousel&quot;,&quot;linkedhomepages&quot;:&quot;[]&quot;,&quot;linktitle&quot;:&quot;franchise&quot;,&quot;appid&quot;:447700}" data-index="1">
+			<div id="featured_carousel_1" class="carousel_container paging_capsules recently_updated_apps">
+							<div class="section_title_ctn"><h2>Destacado</h2></div>
+			
+			<div class="carousel_items store_capsule_container curator_featured" data-panel="{&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}">
+									<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="setup_microtrailer focus" data-micro="https://video.fastly.steamstatic.com/store_trailers/256753779/microtrailer.webm?t=1562780110" aria-hidden="false">
+					<div class="capsule">
+						<a data-ds-appid="447700" data-ds-itemkey="App_447700" data-ds-tagids="[597,1664,3878,3859,19,7368,1773]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:447700,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="https://store.steampowered.com/app/447700/Crystal_Crisis/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158">
+							<img class="capimg" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447700/header.jpg?t=1589887050">
+							<div class="price_row">
+								<span class="app_platforms"><span class="platform_img win"></span></span>
+								<div class="discount_block discount_block_inline" data-price-final="167" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 16,79€. Con descuento cuesta 1,67€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">16,79€</div><div class="discount_final_price">1,67€</div></div></div>							</div>
+						</a>
+						<div class="curator_review">
+							<div class="review_details  ">
+							<span class="review_direction color_created"> </span>																								<span class="curator_review_date">Publicado el 31 JUL 2019</span>
+															
+							</div>
+							«Crystal Crisis es el videojuego de puzzle definitivo. Es una intensa competencia uno contra uno con características innovadoras, presentada con gran animación, efectos especiales, música y diseño de sonido de alta calidad. Con competencia local y en línea!»						</div>
+					</div>
+					<div class="contents">
+														<video class="microtrailer_video added_source" loop="" muted=""></video>
+															<div class="screenshots">
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447700/ss_89632fc98965508b71d6f3cfb8f77ddc56858e2e.600x338.jpg?t=1589887050)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447700/ss_42862217dcc88c4ac58bbee909906a6975d49a93.600x338.jpg?t=1589887050)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447700/ss_d05b254700662de7df1e9afbbca96738531211f7.600x338.jpg?t=1589887050)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447700/ss_4f9c06ed9a7f01b8bb1697b05595d5778e14819d.600x338.jpg?t=1589887050)"></div>
+																</div>
+																		</div>
+					</div>
+			</div>
+
+
+			<div class="carousel_thumbs featured">
+				
+			</div>
+			<div class="arrow left" style="display: none;"><div></div></div>
+			<div class="arrow right" style="display: none;"><div></div></div>
+		</div>
+
+		<script>
+			var fnOnBlur = function( nIndex )
+			{
+				$J('iframe',this.$elItems[nIndex]).each(function(i, j){
+					this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+				});
+			}
+			CreateFadingCarousel( $J('#featured_carousel_1'), 0, true, fnOnBlur);
+			$J('.curator_review', $J('#featured_carousel_1')).each(function(i, j){
+				var $el = $J(j);
+				if( $el.innerHeight() > 160 )
+				{
+					$el.addClass('oversize');
+				}
+			});
+		</script>
+	</div>		<div class="page_section type_carousel  single_item " data-section-config="{&quot;type&quot;:&quot;featured_single_creation&quot;,&quot;listid&quot;:0,&quot;listid_label&quot;:&quot;Select...&quot;,&quot;tagid&quot;:0,&quot;tagid_label&quot;:&quot;Select...&quot;,&quot;sort&quot;:&quot;recent&quot;,&quot;presentation&quot;:&quot;featuredcarousel&quot;,&quot;linkedhomepages&quot;:&quot;[]&quot;,&quot;linktitle&quot;:&quot;franchise&quot;,&quot;appid&quot;:995240}" data-index="2">
+			<div id="featured_carousel_2" class="carousel_container paging_capsules recently_updated_apps">
+							<div class="section_title_ctn"><h2>Destacado</h2></div>
+			
+			<div class="carousel_items store_capsule_container curator_featured" data-panel="{&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}">
+									<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="setup_microtrailer focus" data-micro="https://video.fastly.steamstatic.com/store_trailers/256740462/microtrailer.webm?t=1551747371" aria-hidden="false">
+					<div class="capsule">
+						<a data-ds-appid="995240" data-ds-itemkey="App_995240" data-ds-tagids="[19,42804,4085,3959,1646,7208,4726]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:995240,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="https://store.steampowered.com/app/995240/RemiLore_Lost_Girl_in_the_Lands_of_Lore/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158">
+							<img class="capimg" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/995240/header.jpg?t=1606894761">
+							<div class="price_row">
+								<span class="app_platforms"><span class="platform_img win"></span></span>
+								<div class="discount_block discount_block_inline" data-price-final="339" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 33,99€. Con descuento cuesta 3,39€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">33,99€</div><div class="discount_final_price">3,39€</div></div></div>							</div>
+						</a>
+						<div class="curator_review">
+							<div class="review_details  ">
+							<span class="review_direction color_created"> </span>																								<span class="curator_review_date">Publicado el 4 SEP 2019</span>
+															
+							</div>
+							«RemiLore: Lost Girl in the Lands of Lore is a “rogue-lite” anime-style adventure set in a colorful fantasy world where players hack-and-slash their way through an army of mechanical monsters using a huge variety of unique melee weapons and devastating magic attacks!»						</div>
+					</div>
+					<div class="contents">
+														<video class="microtrailer_video added_source" loop="" muted=""></video>
+															<div class="screenshots">
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/995240/ss_0a3d8deed0bdfef54db213cb89cad24fa6543fc5.600x338.jpg?t=1606894761)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/995240/ss_7426be739a3a958f2b5b448a0f55814566a2bb58.600x338.jpg?t=1606894761)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/995240/ss_5106c61ffe68ec4fdba1e648b2c8c5a1f1da828d.600x338.jpg?t=1606894761)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/995240/ss_f2a56c8dd8cb1ef52db69b9c35974dacad36259e.600x338.jpg?t=1606894761)"></div>
+																</div>
+																		</div>
+					</div>
+			</div>
+
+
+			<div class="carousel_thumbs featured">
+				
+			</div>
+			<div class="arrow left" style="display: none;"><div></div></div>
+			<div class="arrow right" style="display: none;"><div></div></div>
+		</div>
+
+		<script>
+			var fnOnBlur = function( nIndex )
+			{
+				$J('iframe',this.$elItems[nIndex]).each(function(i, j){
+					this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+				});
+			}
+			CreateFadingCarousel( $J('#featured_carousel_2'), 0, true, fnOnBlur);
+			$J('.curator_review', $J('#featured_carousel_2')).each(function(i, j){
+				var $el = $J(j);
+				if( $el.innerHeight() > 160 )
+				{
+					$el.addClass('oversize');
+				}
+			});
+		</script>
+	</div>		<div class="page_section type_carousel  single_item " data-section-config="{&quot;type&quot;:&quot;featured_single_creation&quot;,&quot;listid&quot;:0,&quot;listid_label&quot;:&quot;Select...&quot;,&quot;tagid&quot;:0,&quot;tagid_label&quot;:&quot;Select...&quot;,&quot;sort&quot;:&quot;recent&quot;,&quot;presentation&quot;:&quot;featuredcarousel&quot;,&quot;linkedhomepages&quot;:&quot;[]&quot;,&quot;linktitle&quot;:&quot;franchise&quot;,&quot;appid&quot;:565170}" data-index="3">
+			<div id="featured_carousel_3" class="carousel_container paging_capsules recently_updated_apps">
+							<div class="section_title_ctn"><h2>Destacado</h2></div>
+			
+			<div class="carousel_items store_capsule_container curator_featured" data-panel="{&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}">
+									<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="setup_microtrailer focus" data-micro="https://video.fastly.steamstatic.com/store_trailers/256721322/microtrailer.webm?t=1534381316" aria-hidden="false">
+					<div class="capsule">
+						<a data-ds-appid="565170" data-ds-itemkey="App_565170" data-ds-tagids="[19,1743,4736,4085,1773]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:565170,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="https://store.steampowered.com/app/565170/Blade_Strangers/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158">
+							<img class="capimg" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/565170/header.jpg?t=1574734755">
+							<div class="price_row">
+								<span class="app_platforms"><span class="platform_img win"></span></span>
+								<div class="discount_block discount_block_inline" data-price-final="167" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 16,79€. Con descuento cuesta 1,67€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">16,79€</div><div class="discount_final_price">1,67€</div></div></div>							</div>
+						</a>
+						<div class="curator_review">
+							<div class="review_details  ">
+							<span class="review_direction color_created"> </span>																								<span class="curator_review_date">Publicado el 28 AGO 2018</span>
+															
+							</div>
+							«A malevolent force known only as Lina is devouring data from a vast, interdimensional network of servers overseen by sentient computers called ”motes.” In desperation, the motes summon heroes from a variety of parallel game worlds to face off against each other in one-on-one combat.»						</div>
+					</div>
+					<div class="contents">
+														<video class="microtrailer_video added_source" loop="" muted=""></video>
+															<div class="screenshots">
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/565170/ss_e128f760082f33f800ce75ec245fa171e67d896f.600x338.jpg?t=1574734755)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/565170/ss_f217eb8d5f0567368b6b039c531ba3dccfebead4.600x338.jpg?t=1574734755)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/565170/ss_e5525a014949263122af056352f7d8b74d1b7300.600x338.jpg?t=1574734755)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/565170/ss_b2981d176e6294ef43d404064e202248fb1d0ade.600x338.jpg?t=1574734755)"></div>
+																</div>
+																		</div>
+					</div>
+			</div>
+
+
+			<div class="carousel_thumbs featured">
+				
+			</div>
+			<div class="arrow left" style="display: none;"><div></div></div>
+			<div class="arrow right" style="display: none;"><div></div></div>
+		</div>
+
+		<script>
+			var fnOnBlur = function( nIndex )
+			{
+				$J('iframe',this.$elItems[nIndex]).each(function(i, j){
+					this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+				});
+			}
+			CreateFadingCarousel( $J('#featured_carousel_3'), 0, true, fnOnBlur);
+			$J('.curator_review', $J('#featured_carousel_3')).each(function(i, j){
+				var $el = $J(j);
+				if( $el.innerHeight() > 160 )
+				{
+					$el.addClass('oversize');
+				}
+			});
+		</script>
+	</div><div class="page_section type_carousel  single_item " data-section-config="{&quot;type&quot;:&quot;featured_single_creation&quot;,&quot;listid&quot;:0,&quot;listid_label&quot;:&quot;Select...&quot;,&quot;tagid&quot;:0,&quot;tagid_label&quot;:&quot;Select...&quot;,&quot;sort&quot;:&quot;recent&quot;,&quot;presentation&quot;:&quot;featuredcarousel&quot;,&quot;linkedhomepages&quot;:&quot;[]&quot;,&quot;linktitle&quot;:&quot;franchise&quot;,&quot;appid&quot;:1300100}" data-index="4">
+			<div id="featured_carousel_4" class="carousel_container paging_capsules recently_updated_apps">
+							<div class="section_title_ctn"><h2>Destacado</h2></div>
+			
+			<div class="carousel_items store_capsule_container curator_featured" data-panel="{&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}">
+									<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="setup_microtrailer focus" data-micro="https://video.fastly.steamstatic.com/store_trailers/256856660/microtrailer.webm?t=1634756642" aria-hidden="false">
+					<div class="capsule">
+						<a data-ds-appid="1300100" data-ds-itemkey="App_1300100" data-ds-tagids="[19,1625,1774,3798,1742,1755,3964]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:1300100,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="https://store.steampowered.com/app/1300100/Spectacular_Sparky/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158">
+							<img class="capimg" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1300100/header.jpg?t=1646942800">
+							<div class="price_row">
+								<span class="app_platforms"><span class="platform_img win"></span></span>
+								<div class="discount_block discount_block_inline" data-price-final="249" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 12,49€. Con descuento cuesta 2,49€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">12,49€</div><div class="discount_final_price">2,49€</div></div></div>							</div>
+						</a>
+						<div class="curator_review">
+							<div class="review_details  ">
+							<span class="review_direction color_created"> </span>																								<span class="curator_review_date">Publicado el 20 OCT 2021</span>
+															
+							</div>
+							«A throwback to the golden age of white-gloved 16-bit video-game mascots, Spectacular Sparky is an action-packed platformer with wacky characters, explosive weapons and boss battles to treasure!»						</div>
+					</div>
+					<div class="contents">
+														<video class="microtrailer_video added_source" loop="" muted=""></video>
+															<div class="screenshots">
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1300100/ss_89bc1d986ae87269a072b8bec2058b47eb99aaef.600x338.jpg?t=1646942800)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1300100/ss_aece018dba95ec5d8786cb703895cca23242385d.600x338.jpg?t=1646942800)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1300100/ss_c83ca66f2b86a712da4ebfb16d72618c8613c919.600x338.jpg?t=1646942800)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1300100/ss_1c26c35d17d56eda60fd88a09ee0fd6e6896b9c3.600x338.jpg?t=1646942800)"></div>
+																</div>
+																		</div>
+					</div>
+			</div>
+
+
+			<div class="carousel_thumbs featured">
+				
+			</div>
+			<div class="arrow left" style="display: none;"><div></div></div>
+			<div class="arrow right" style="display: none;"><div></div></div>
+		</div>
+
+		<script>
+			var fnOnBlur = function( nIndex )
+			{
+				$J('iframe',this.$elItems[nIndex]).each(function(i, j){
+					this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+				});
+			}
+			CreateFadingCarousel( $J('#featured_carousel_4'), 0, true, fnOnBlur);
+			$J('.curator_review', $J('#featured_carousel_4')).each(function(i, j){
+				var $el = $J(j);
+				if( $el.innerHeight() > 160 )
+				{
+					$el.addClass('oversize');
+				}
+			});
+		</script>
+	</div><div class="page_section type_carousel  single_item " data-section-config="{&quot;type&quot;:&quot;featured_single_creation&quot;,&quot;listid&quot;:0,&quot;listid_label&quot;:&quot;Select...&quot;,&quot;tagid&quot;:0,&quot;tagid_label&quot;:&quot;Select...&quot;,&quot;sort&quot;:&quot;recent&quot;,&quot;presentation&quot;:&quot;featuredcarousel&quot;,&quot;linkedhomepages&quot;:&quot;[]&quot;,&quot;linktitle&quot;:&quot;franchise&quot;,&quot;appid&quot;:808010}" data-index="5">
+			<div id="featured_carousel_5" class="carousel_container paging_capsules recently_updated_apps">
+							<div class="section_title_ctn"><h2>Destacado</h2></div>
+			
+			<div class="carousel_items store_capsule_container curator_featured" data-panel="{&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}">
+									<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="setup_microtrailer focus" data-micro="https://video.fastly.steamstatic.com/store_trailers/256855550/microtrailer.webm?t=1634171428" aria-hidden="false">
+					<div class="capsule">
+						<a data-ds-appid="808010" data-ds-itemkey="App_808010" data-ds-tagids="[42804,5379,3959,4758,1720,122,1625]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:808010,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" href="https://store.steampowered.com/app/808010/Critadel/?snr=1_1056_4_18_1059&amp;curator_clanid=6877158">
+							<img class="capimg" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/808010/header.jpg?t=1689716965">
+							<div class="price_row">
+								<span class="app_platforms"><span class="platform_img win"></span></span>
+								<div class="discount_block discount_block_inline" data-price-final="340" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 17,--€. Con descuento cuesta 3,40€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">17,--€</div><div class="discount_final_price">3,40€</div></div></div>							</div>
+						</a>
+						<div class="curator_review">
+							<div class="review_details  ">
+							<span class="review_direction color_created"> </span>																								<span class="curator_review_date">Publicado el 12 OCT 2021</span>
+															
+							</div>
+							«Critadel is a futuristic platform/shooter/roguelike with three playable characters, hundreds of branching paths and over 100,000 unique weapon configurations!»						</div>
+					</div>
+					<div class="contents">
+														<video class="microtrailer_video added_source" loop="" muted=""></video>
+															<div class="screenshots">
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/808010/ss_8b9e5a0c0de113d11a40334051ec822663941dea.600x338.jpg?t=1689716965)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/808010/ss_075a222299c4a47400a1e945d0722ff3b4553876.600x338.jpg?t=1689716965)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/808010/ss_72257b6d442d83fcc268a52528db04ee278ffd30.600x338.jpg?t=1689716965)"></div>
+																	<div style="background-image: url(https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/808010/ss_1b98d604bc2ce3ea9284759fe2233ddecdb9a664.600x338.jpg?t=1689716965)"></div>
+																</div>
+																		</div>
+					</div>
+			</div>
+
+
+			<div class="carousel_thumbs featured">
+				
+			</div>
+			<div class="arrow left" style="display: none;"><div></div></div>
+			<div class="arrow right" style="display: none;"><div></div></div>
+		</div>
+
+		<script>
+			var fnOnBlur = function( nIndex )
+			{
+				$J('iframe',this.$elItems[nIndex]).each(function(i, j){
+					this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+				});
+			}
+			CreateFadingCarousel( $J('#featured_carousel_5'), 0, true, fnOnBlur);
+			$J('.curator_review', $J('#featured_carousel_5')).each(function(i, j){
+				var $el = $J(j);
+				if( $el.innerHeight() > 160 )
+				{
+					$el.addClass('oversize');
+				}
+			});
+		</script>
+	</div>	</div>
+</div>
+
+	<a name="browse"></a>	<div class="page_content_ctn  tabbed_ctn">
+		<div class="page_content browse_reviews">
+
+			<form id="filter_box" class="filter_ctn" autocomplete="off">
+
+
+				<div class="browse_tabs ">
+										<a data-panel="[]" onclick="CuratorChangeTabs(this, 'topsellers', 1); return false">
+						Lo más vendido						<input type="hidden" name="sort" value="">
+					</a>
+					<a data-panel="[]" class="selected" onclick="CuratorChangeTabs(this, 'newreleases', 1 ); return false">
+						Novedades						<input type="hidden" name="sort" value="newreleases">
+					</a>
+											<a data-panel="[]" onclick="CuratorChangeTabs(this, 'upcoming', 1 ); return false">
+							Próximos lanzamientos							<input type="hidden" name="sort" value="">
+						</a>
+										<a data-panel="[]" onclick="CuratorChangeTabs(this, 'discounted', 1 ); return false">
+						Descuentos						<input type="hidden" name="sort" value="">
+					</a>
+				</div>
+
+				<div class="browse_ctn_background ">
+					<div class="browse_container">
+						<div class="browse_filters">
+							<div>
+			<div id="filtertype_container">
+			<h4>Tipo</h4>
+
+			<a id="filter_app_type_all" onclick="CuratorFieldToggle(this, ''); return false;" class="all ">
+				Todos<span id="filter_app_type_num_all" class="curator_filter_tag_count">26</span>
+				<input type="hidden" name="app_types" value="">
+			</a>
+
+								<a id="filter_app_type_game" onclick="CuratorFieldToggle(this, 'game'); return false;" class="selected">
+						Juego<span id="filter_app_type_num_game" class="curator_filter_tag_count">22</span>
+						<input type="hidden" name="app_types" value="game">
+					</a>
+									<a id="filter_app_type_dlc" onclick="CuratorFieldToggle(this, 'dlc'); return false;">
+						DLC<span id="filter_app_type_num_dlc" class="curator_filter_tag_count">4</span>
+						<input type="hidden" name="app_types" value="">
+					</a>
+						</div>
+		<div id="filtertags_container">
+		<h4>Filtrar:</h4>
+
+		<a id="tagid_filteration_all" onclick="CuratorFieldToggle(this, ''); return false;" class="all selected">
+			Todos<span id="filter_tagid_num_all" class="curator_filter_tag_count">26</span>
+			<input type="hidden" name="tagids" value="">
+		</a>
+							<a onclick="CuratorFieldToggle(this, '19'); return false">
+						Acción						<span id="filter_tagid_num_19" class="curator_filter_tag_count">21</span>
+						<img data-tooltip-text="Eliminar esta etiqueta" src="https://store.fastly.steamstatic.com/public/images/v6/close_btn.png" class="ttip delete tag_edit_control" onclick="DeleteFeaturedTag( 19, &quot;Acci\u00f3n&quot; ); event.stopPropagation(); return false;">
+						<input type="hidden" name="tagids" value="">
+					</a>
+									<a onclick="CuratorFieldToggle(this, '21'); return false">
+						Aventura						<span id="filter_tagid_num_21" class="curator_filter_tag_count">9</span>
+						<img data-tooltip-text="Eliminar esta etiqueta" src="https://store.fastly.steamstatic.com/public/images/v6/close_btn.png" class="ttip delete tag_edit_control" onclick="DeleteFeaturedTag( 21, &quot;Aventura&quot; ); event.stopPropagation(); return false;">
+						<input type="hidden" name="tagids" value="">
+					</a>
+									<a onclick="CuratorFieldToggle(this, '597'); return false">
+						Casuales						<span id="filter_tagid_num_597" class="curator_filter_tag_count">4</span>
+						<img data-tooltip-text="Eliminar esta etiqueta" src="https://store.fastly.steamstatic.com/public/images/v6/close_btn.png" class="ttip delete tag_edit_control" onclick="DeleteFeaturedTag( 597, &quot;Casuales&quot; ); event.stopPropagation(); return false;">
+						<input type="hidden" name="tagids" value="">
+					</a>
+									<a onclick="CuratorFieldToggle(this, '9'); return false">
+						Estrategia						<span id="filter_tagid_num_9" class="curator_filter_tag_count">6</span>
+						<img data-tooltip-text="Eliminar esta etiqueta" src="https://store.fastly.steamstatic.com/public/images/v6/close_btn.png" class="ttip delete tag_edit_control" onclick="DeleteFeaturedTag( 9, &quot;Estrategia&quot; ); event.stopPropagation(); return false;">
+						<input type="hidden" name="tagids" value="">
+					</a>
+									<a onclick="CuratorFieldToggle(this, '492'); return false">
+						Indie						<span id="filter_tagid_num_492" class="curator_filter_tag_count">18</span>
+						<img data-tooltip-text="Eliminar esta etiqueta" src="https://store.fastly.steamstatic.com/public/images/v6/close_btn.png" class="ttip delete tag_edit_control" onclick="DeleteFeaturedTag( 492, &quot;Indie&quot; ); event.stopPropagation(); return false;">
+						<input type="hidden" name="tagids" value="">
+					</a>
+									<a onclick="CuratorFieldToggle(this, '122'); return false">
+						Rol						<span id="filter_tagid_num_122" class="curator_filter_tag_count">5</span>
+						<img data-tooltip-text="Eliminar esta etiqueta" src="https://store.fastly.steamstatic.com/public/images/v6/close_btn.png" class="ttip delete tag_edit_control" onclick="DeleteFeaturedTag( 122, &quot;Rol&quot; ); event.stopPropagation(); return false;">
+						<input type="hidden" name="tagids" value="">
+					</a>
+						<div id="edit_controls" class="tag_edit_control">
+			<a onclick="ShowAddFeaturedTagModal(); return false;">
+				<img src="https://store.fastly.steamstatic.com/public/images/v6/icon_bucket_new.png">
+				Añadir una etiqueta			</a>
+		</div>
+	</div>
+</div>
+                            <div id="client_filter" style="">
+                                <h4>Filtrar por preferencias</h4>
+                                <a onclick="GDynamicStore.ToggleClientsideFilter(this, 'selected', $J('#RecommendationsRows'), 'hide_ignored');">Ocultar artículos ignorados</a>
+                                <a onclick="GDynamicStore.ToggleClientsideFilter(this, 'selected', $J('#RecommendationsRows'), 'hide_owned');  ">Ocultar los de mi biblioteca</a>
+                            </div>
+						</div>
+						<div class="browse_content" id="RecommendationsTable">
+
+															<div class="mature_content_filtered">
+									Los resultados pueden excluir algunos productos basándose en <a href="https://store.steampowered.com/account/preferences/">tus preferencias de idioma o contenido</a>								</div>
+							
+							<div class="landingTable" id="RecommendationsRows">
+								<div>
+
+				<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="787760" data-ds-itemkey="App_787760" data-ds-tagids="[113,6506,1669,3859,19,6915,599]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:787760,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/787760/Toribash_Next/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/787760/header_292x136.jpg?t=1706089477" alt="Toribash Next"></div><div class="discount_block discount_block_inline no_discount" data-price-final="0" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">Free to Play</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/787760/Toribash_Next/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Toribash Next</span>										<span class="curator_review_date">24 ENE 2024</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img mac"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Toribash Next is the sequel to Toribash, the award-winning turn-based sandbox fighting game, developed by Nabi Studios. More players and fighting, weapons and blood, and ultimately - more fun.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="1300100" data-ds-itemkey="App_1300100" data-ds-tagids="[19,1625,1774,3798,1742,1755,3964]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:1300100,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/1300100/Spectacular_Sparky/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1300100/header_292x136.jpg?t=1646942800" alt="Spectacular Sparky"></div><div class="discount_block discount_block_inline" data-price-final="249" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 12,49€. Con descuento cuesta 2,49€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">12,49€</div><div class="discount_final_price">2,49€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/1300100/Spectacular_Sparky/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Spectacular Sparky</span>										<span class="curator_review_date">20 OCT 2021</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						A throwback to the golden age of white-gloved 16-bit video-game mascots, Spectacular Sparky is an action-packed platformer with wacky characters, explosive weapons and boss battles to treasure!						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="808010" data-ds-itemkey="App_808010" data-ds-tagids="[42804,5379,3959,4758,1720,122,1625]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:808010,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/808010/Critadel/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/808010/header_292x136.jpg?t=1689716965" alt="Critadel"></div><div class="discount_block discount_block_inline" data-price-final="340" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 17,--€. Con descuento cuesta 3,40€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">17,--€</div><div class="discount_final_price">3,40€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/808010/Critadel/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Critadel</span>										<span class="curator_review_date">12 OCT 2021</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Critadel is a futuristic platform/shooter/roguelike with three playable characters, hundreds of branching paths and over 100,000 unique weapon configurations!						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="1185620" data-ds-itemkey="App_1185620" data-ds-tagids="[19,492,9,176981,3859,1659,3871]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:1185620,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/1185620/NecroLand__Undead_Corps/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1185620/header_292x136.jpg?t=1625075047" alt="NecroLand : Undead Corps"></div><div class="discount_block discount_block_inline" data-price-final="81" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 8,19€. Con descuento cuesta 0,81€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">8,19€</div><div class="discount_final_price">0,81€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/1185620/NecroLand__Undead_Corps/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">NecroLand : Undead Corps</span>										<span class="curator_review_date">30 JUN 2021</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img mac"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						In NecroLand: Undead Corps, you compete in online "battle royale" action to be the last survivor in a zombie-filled wasteland. You control an Alpha Unit that can “tame” legions of wandering undead and add them to your squadron of allies who obey your commands.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="711380" data-ds-itemkey="App_711380" data-ds-tagids="[19,122,3841,3859,4182,3955,4106]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:711380,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/711380/Code_of_Princess_EX/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/711380/header_292x136.jpg?t=1601655299" alt="Code of Princess EX"></div><div class="discount_block discount_block_inline" data-price-final="335" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 16,79€. Con descuento cuesta 3,35€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">16,79€</div><div class="discount_final_price">3,35€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/711380/Code_of_Princess_EX/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Code of Princess EX</span>										<span class="curator_review_date">2 OCT 2020</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Take the role of Princess Solange of DeLuxia as she fights to restore order in a world overrun with monsters. Armed with the legendary sword DeLuxcalibur, Solange gathers a team of fighters, and together they embark on an epic journey to confront the monster uprising and uncover its secret origins.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="1148650" data-ds-itemkey="App_1148650" data-ds-tagids="[3959,492,9,21,1664,1665,4182]" data-ds-descids="[5]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:1148650,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline app_impression_tracked" href="https://store.steampowered.com/app/1148650/The_Legend_of_BumBo/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1148650/header_292x136.jpg?t=1573677510" alt="The Legend of Bum-Bo"></div><div class="discount_block discount_block_inline" data-price-final="458" data-bundlediscount="0" data-discount="69" role="link" aria-label="69&nbsp;% de descuento. Normalmente cuesta 14,79€. Con descuento cuesta 4,58€."><div class="discount_pct">-69%</div><div class="discount_prices"><div class="discount_original_price">14,79€</div><div class="discount_final_price">4,58€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/1148650/The_Legend_of_BumBo/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">The Legend of Bum-Bo</span>										<span class="curator_review_date">12 NOV 2019</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						A puzzle based deck building rogue-like prequel to The Binding of Isaac... Made of cardboard!						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="995240" data-ds-itemkey="App_995240" data-ds-tagids="[19,42804,4085,3959,1646,7208,4726]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:995240,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline app_impression_tracked" href="https://store.steampowered.com/app/995240/RemiLore_Lost_Girl_in_the_Lands_of_Lore/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/995240/header_292x136.jpg?t=1606894761" alt="RemiLore: Lost Girl in the Lands of Lore"></div><div class="discount_block discount_block_inline" data-price-final="339" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 33,99€. Con descuento cuesta 3,39€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">33,99€</div><div class="discount_final_price">3,39€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/995240/RemiLore_Lost_Girl_in_the_Lands_of_Lore/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">RemiLore: Lost Girl in the Lands of Lore</span>										<span class="curator_review_date">4 SEP 2019</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						RemiLore: Lost Girl in the Lands of Lore is a “rogue-lite” anime-style adventure set in a colorful fantasy world where players hack-and-slash their way through an army of mechanical monsters using a huge variety of unique melee weapons and devastating magic attacks!						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="447700" data-ds-itemkey="App_447700" data-ds-tagids="[597,1664,3878,3859,19,7368,1773]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:447700,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline app_impression_tracked" href="https://store.steampowered.com/app/447700/Crystal_Crisis/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447700/header_292x136.jpg?t=1589887050" alt="Crystal Crisis"></div><div class="discount_block discount_block_inline" data-price-final="167" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 16,79€. Con descuento cuesta 1,67€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">16,79€</div><div class="discount_final_price">1,67€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/447700/Crystal_Crisis/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Crystal Crisis</span>										<span class="curator_review_date">31 JUL 2019</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Crystal Crisis es el videojuego de puzzle definitivo. Es una intensa competencia uno contra uno con características innovadoras, presentada con gran animación, efectos especiales, música y diseño de sonido de alta calidad. Con competencia local y en línea!						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="565170" data-ds-itemkey="App_565170" data-ds-tagids="[19,1743,4736,4085,1773]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:565170,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline app_impression_tracked" href="https://store.steampowered.com/app/565170/Blade_Strangers/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/565170/header_292x136.jpg?t=1574734755" alt="Blade Strangers"></div><div class="discount_block discount_block_inline" data-price-final="167" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 16,79€. Con descuento cuesta 1,67€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">16,79€</div><div class="discount_final_price">1,67€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/565170/Blade_Strangers/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Blade Strangers</span>										<span class="curator_review_date">28 AGO 2018</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						A malevolent force known only as Lina is devouring data from a vast, interdimensional network of servers overseen by sentient computers called ”motes.” In desperation, the motes summon heroes from a variety of parallel game worlds to face off against each other in one-on-one combat.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="732770" data-ds-itemkey="App_732770" data-ds-tagids="[19,492,8666,3871,3964,4004]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:732770,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline app_impression_tracked" href="https://store.steampowered.com/app/732770/Knight_Terrors/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/732770/header_292x136.jpg?t=1579739176" alt="Knight Terrors"></div><div class="discount_block discount_block_inline" data-price-final="98" data-bundlediscount="0" data-discount="67" role="link" aria-label="67&nbsp;% de descuento. Normalmente cuesta 2,99€. Con descuento cuesta 0,98€."><div class="discount_pct">-67%</div><div class="discount_prices"><div class="discount_original_price">2,99€</div><div class="discount_final_price">0,98€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/732770/Knight_Terrors/?snr=1_1056_4_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Knight Terrors</span>										<span class="curator_review_date">31 OCT 2017</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img mac"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						A blood-curdling, demon-slashing dash of death! Knight Terrors goes straight for the jugular: it’s a lurid mash-up of side-scrolling gameplay styles in endless procedurally generated levels. Once you’re hooked, the game keeps pulling you back in to increase your high score and unlock more features!						</div>
+
+											</div>
+				</a>
+			</div>
+
+		</div>							<div>
+
+				<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="450440" data-ds-itemkey="App_450440" data-ds-tagids="[21,492,122,3871,3964,4004,4182]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:450440,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/450440/Creepy_Castle/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/450440/header_292x136.jpg?t=1591746220" alt="Creepy Castle"></div><div class="discount_block discount_block_inline" data-price-final="163" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 8,19€. Con descuento cuesta 1,63€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">8,19€</div><div class="discount_final_price">1,63€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/450440/Creepy_Castle/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Creepy Castle</span>										<span class="curator_review_date">31 OCT 2016</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						A conspiracy is welling deep within the stone walls of an ancient castle.The keep’s master is leading its denizens to construct a revolutionary new device made to move the world forward onto a new path of evolution.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="447690" data-ds-itemkey="App_447690" data-ds-tagids="[597,599,21978,1714]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:447690,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/447690/Dimensional_Intersection/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447690/header_292x136.jpg?t=1478200234" alt="Dimensional Intersection"></div><div class="discount_block discount_block_inline" data-price-final="99" data-bundlediscount="0" data-discount="80" role="link" aria-label="80&nbsp;% de descuento. Normalmente cuesta 4,99€. Con descuento cuesta 0,99€."><div class="discount_pct">-80%</div><div class="discount_prices"><div class="discount_original_price">4,99€</div><div class="discount_final_price">0,99€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/447690/Dimensional_Intersection/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Dimensional Intersection</span>										<span class="curator_review_date">6 OCT 2016</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img group_separator"></span><span class="vr_required">Solo RV</span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Dimensional Intersection is an interactive musical visualizer for virtual reality. Featuring music from artists such as Globular and MONS, it will take you to a new reality through surreal scenes filled with interactive real-time fractals, infinite tunnels and morphing 3D models.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="508990" data-ds-itemkey="App_508990" data-ds-tagids="[19,492,1773,4004,3871,3964,1625]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:508990,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/508990/Handsome_Mr_Frog/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/508990/header_292x136.jpg?t=1470684635" alt="Handsome Mr. Frog"></div><div class="discount_block discount_block_inline no_discount" data-price-final="99" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">0,99€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/508990/Handsome_Mr_Frog/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Handsome Mr. Frog</span>										<span class="curator_review_date">8 AGO 2016</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Jump, lick, and spit your way through four worlds in a new-school arcade adventure starring the nominal Handsome Mr. Frog, a good looking fellow whose hat was jacked by a bunch of unattractive normies.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="401840" data-ds-itemkey="App_401840" data-ds-tagids="[19,492,7368,4182,4840,3964,1625]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:401840,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/401840/ChargeShot/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/401840/header_292x136.jpg?t=1466700227" alt="ChargeShot"></div><div class="discount_block discount_block_inline" data-price-final="99" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 9,99€. Con descuento cuesta 0,99€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">9,99€</div><div class="discount_final_price">0,99€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/401840/ChargeShot/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">ChargeShot</span>										<span class="curator_review_date">18 SEP 2015</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Shoot, reflect, and jetpack your way through ChargeShot -- a local-multiplayer, space-bounty-hunter, deathmatch game with a focus on fast-paced, twitch gameplay. Prove to your friends that you are the greatest warrior in the galaxy. No friends? No problem.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="262960" data-ds-itemkey="App_262960" data-ds-tagids="[1628,492,1625,19,4026,21,3964]" data-ds-crtrids="[45076552,6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:262960,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/262960/Castle_In_The_Darkness/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/262960/header_292x136.jpg?t=1591751532" alt="Castle In The Darkness"></div><div class="discount_block discount_block_inline" data-price-final="249" data-bundlediscount="0" data-discount="75" role="link" aria-label="75&nbsp;% de descuento. Normalmente cuesta 9,99€. Con descuento cuesta 2,49€."><div class="discount_pct">-75%</div><div class="discount_prices"><div class="discount_original_price">9,99€</div><div class="discount_final_price">2,49€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/262960/Castle_In_The_Darkness/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Castle In The Darkness</span>										<span class="curator_review_date">5 FEB 2015</span>
+																	<span style="float:right"><span class="platform_img win"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Castle In The Darkness is a fun and challenging shout out to the early days of video games! It's an action exploration platformer with some RPG elements, much like games from the Castlevania or Metroid series. It's super fast-paced, challenging, and full of secrets!						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="250900" data-ds-itemkey="App_250900" data-ds-tagids="[42804,1716,492,4711,4026,3964,1720]" data-ds-descids="[5]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:250900,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250900/header_292x136.jpg?t=1731977365" alt="The Binding of Isaac: Rebirth"></div><div class="discount_block discount_block_inline" data-price-final="494" data-bundlediscount="0" data-discount="67" role="link" aria-label="67&nbsp;% de descuento. Normalmente cuesta 14,99€. Con descuento cuesta 4,94€."><div class="discount_pct">-67%</div><div class="discount_prices"><div class="discount_original_price">14,99€</div><div class="discount_final_price">4,94€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">The Binding of Isaac: Rebirth</span>										<span class="curator_review_date">4 NOV 2014</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img mac"></span><span class="platform_img linux"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						The Binding of Isaac: Rebirth is a randomly generated action RPG shooter with heavy Rogue-like elements. Following Isaac on his journey players will find bizarre treasures that change Isaac’s form giving him super human abilities and enabling him to fight off droves of mysterious creatures,...						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="260790" data-ds-itemkey="App_260790" data-ds-tagids="[3877,1625,492,19,4026,21,3871]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:260790,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/260790/1001_Spikes/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/260790/header_292x136.jpg?t=1591746015" alt="1001 Spikes"></div><div class="discount_block discount_block_inline" data-price-final="329" data-bundlediscount="0" data-discount="67" role="link" aria-label="67&nbsp;% de descuento. Normalmente cuesta 9,99€. Con descuento cuesta 3,29€."><div class="discount_pct">-67%</div><div class="discount_prices"><div class="discount_original_price">9,99€</div><div class="discount_final_price">3,29€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/260790/1001_Spikes/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">1001 Spikes</span>										<span class="curator_review_date">3 JUN 2014</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img mac"></span><span class="platform_img linux"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Discover the lost treasures of Ukampa in South America as Aban Hawkins searches for his estranged father, world-famous archeaologist, Jim Hawkins. Aban Hawkins races into the frozen tundra of the antarctic, undiscovered temple ruins and the vast caverns of South America in search of his father and...						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="248570" data-ds-itemkey="App_248570" data-ds-tagids="[113,6506,1743,3968,3859,4345,19]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:248570,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/248570/Toribash/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/248570/header_292x136.jpg?t=1727332328" alt="Toribash"></div><div class="discount_block discount_block_inline no_discount" data-price-final="0" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">Free to Play</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/248570/Toribash/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Toribash</span>										<span class="curator_review_date">1 MAR 2006</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img mac"></span><span class="platform_img linux"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Toribash is an innovative free-to-play online turn-based fighting game where you’re able to design your own moves. Complete control over character's body, hundreds of game mods and bloody mess with full body dismemberment - you've never been able to annihilate your enemies like that before!						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="253350" data-ds-itemkey="App_253350" data-ds-tagids="[19,21,1625,4004,3964,4182,492]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:253350,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/253350/Tiny_Barbarian_DX/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/253350/header_292x136.jpg?t=1656546647" alt="Tiny Barbarian DX"></div><div class="discount_block discount_block_inline" data-price-final="279" data-bundlediscount="0" data-discount="90" role="link" aria-label="90&nbsp;% de descuento. Normalmente cuesta 27,99€. Con descuento cuesta 2,79€."><div class="discount_pct">-90%</div><div class="discount_prices"><div class="discount_original_price">27,99€</div><div class="discount_final_price">2,79€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/253350/Tiny_Barbarian_DX/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Tiny Barbarian DX</span>										<span class="curator_review_date">3 DIC 2013</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img mac"></span><span class="platform_img linux"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Steel yourself for a relentless display of might and muscle…brawn and bravery…magic and mayhem! Inspired by heroic fantasy fiction, Tiny Barbarian DX combines engaging 2D platform action and combo-based hack-and-slash combat with retro-style pixel art and a loincloth-stirring chiptune soundtrack.						</div>
+
+											</div>
+				</a>
+			</div>
+
+					<div data-panel="{&quot;clickOnActivate&quot;:&quot;firstChild&quot;}" class="recommendation">
+				<div>
+					<a data-ds-appid="214360" data-ds-itemkey="App_214360" data-ds-tagids="[1645,9,492,1777,3859,1685,19]" data-ds-crtrids="[6877158]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:214360,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )" class="store_capsule price_inline" href="https://store.steampowered.com/app/214360/Tower_Wars/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158"><div class="capsule smallcapsule"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/214360/header_292x136.jpg?t=1478044266" alt="Tower Wars"></div><div class="discount_block discount_block_inline no_discount" data-price-final="799" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">7,99€</div></div></div></a>				</div>
+				<a href="https://store.steampowered.com/app/214360/Tower_Wars/?snr=1_1056_ajaxgetfilteredrecommendations_18_curator-tabs&amp;curator_clanid=6877158" class="recommendation_link">
+					<div class="recommendation_midcol">
+
+						
+						<div class="recommendation_stats">
+							<div class="recommendation_type_ctn">
+								<span class="color_created">Tower Wars</span>										<span class="curator_review_date">14 AGO 2012</span>
+																	<span style="float:right"><span class="platform_img win"></span><span class="platform_img mac"></span></span>
+							</div>
+						</div>
+
+
+						<div class="recommendation_desc">
+						Tower Wars combina elementos de tower defense, RTS y caos multijugador para proporcionarte una experiencia completamente única, ¡todo con un divertido estilo a la no tan vieja usanza!						</div>
+
+											</div>
+				</a>
+			</div>
+
+		</div></div>
+							<div id="pager" style="display: none;">
+										<div id="Recommendations_no_results" class="paged_items_no_results" style="display: none">
+			No se han encontrado resultados		</div>
+		
+		<div id="Recommendations_ctn" class="paged_items_paging" style="">
+			<div class="paged_items_paging_controls" id="Recommendations_controls">
+				<span id="Recommendations_btn_prev" class="pagebtn disabled">&lt;</span>
+				<span id="Recommendations_links"><span class="Recommendations_paging_pagelink active">1 </span><span class="Recommendations_paging_pagelink">2 </span><span class="Recommendations_paging_pagelink">3 </span></span>
+				<span id="Recommendations_btn_next" class="pagebtn">&gt;</span>
+			</div>
+
+			<div class="paged_items_paging_summary ellipsis">
+				Mostrando <span id="Recommendations_start">1</span>-<span id="Recommendations_end">10</span> de <span id="Recommendations_total">22</span> resultados			</div>
+
+			<div style="clear: both;"></div>
+		</div>
+					<div id="Recommendations_per_page_ctn" class="paged_items_per_page_row_ctn" style="">
+				<span class="paged_items_paging_size_title">Por página:</span>
+
+				<div id="Recommendations_paging_size_ctn" class="paged_items_paging_size_ctn">
+											<span id="Recommendations_paging_size_0" class="paged_items_paging_size_item size_selected" data-size="10">10</span>
+											<span id="Recommendations_paging_size_1" class="paged_items_paging_size_item " data-size="25">25</span>
+											<span id="Recommendations_paging_size_2" class="paged_items_paging_size_item " data-size="50">50</span>
+											<span id="Recommendations_paging_size_3" class="paged_items_paging_size_item " data-size="100">100</span>
+									</div>
+
+				<div style="clear: both;"></div>
+			</div>
+		
+									</div>
+                            <div id="Recommendations_loading" style="display: none;">
+										<div class="LoadingWrapper">
+			<div class="LoadingThrobber">
+				<div class="Bar Bar1"></div>
+				<div class="Bar Bar2"></div>
+				<div class="Bar Bar3"></div>
+			</div>
+							<div class="LoadingText">Cargando más contenido...</div>
+					</div>
+		                            </div>
+						</div>
+
+						<div style="clear: both"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+		
+</div>
+
+</div>
+
+<div clear="both"></div>
+
+<div id="footer_spacer" style="" class=""></div>
+<div id="footer" role="contentinfo" class="">
+<div class="footer_content">
+
+    <div class="rule"></div>
+				<div id="footer_logo_steam"><img src="https://store.fastly.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="Valve Software" border="0"></div>
+
+    <div id="footer_logo"><a href="http://www.valvesoftware.com" target="_blank" rel=""><img src="https://store.fastly.steamstatic.com/public/images/footerLogo_valve_new.png" alt="Valve Software" border="0"></a></div>
+    <div id="footer_text" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+        <div>© 2024 Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE.&nbsp;UU. y otros países.</div>
+        <div>Todos los precios incluyen IVA (donde sea aplicable).&nbsp;&nbsp;
+
+            <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank" rel="">Política de Privacidad</a>
+            &nbsp; <span aria-hidden="true">|</span> &nbsp;
+            <a href="https://store.steampowered.com/legal/?snr=1_44_44_" target="_blank" rel="">Información legal</a>
+            &nbsp; <span aria-hidden="true">|</span> &nbsp;
+            <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="_blank" rel="">Acuerdo de Suscriptor a Steam</a>
+            &nbsp; <span aria-hidden="true">|</span> &nbsp;
+            <a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="_blank" rel="">Reembolsos</a>
+            &nbsp; <span aria-hidden="true">|</span> &nbsp;
+            <a href="https://store.steampowered.com/account/cookiepreferences/?snr=1_44_44_" target="_blank" rel="">Cookies</a>
+
+        </div>
+					<div class="responsive_optin_link">
+				<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+					<span>Ver versión para móviles</span>
+				</div>
+			</div>
+		
+    </div>
+
+
+
+    <div style="clear: left;"></div>
+	<br>
+
+    <div class="rule"></div>
+
+    <div class="valve_links" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+        <a href="http://www.valvesoftware.com/about" target="_blank" rel="">Acerca de Valve</a>
+        &nbsp; <span aria-hidden="true">|</span> &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="">Empleo</a>
+        &nbsp; <span aria-hidden="true">|</span> &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank" rel="">Steamworks</a>
+        &nbsp; <span aria-hidden="true">|</span> &nbsp;<a href="https://partner.steamgames.com/steamdirect" target="_blank" rel="">Distribución de Steam</a>
+        &nbsp; <span aria-hidden="true">|</span> &nbsp;<a href="https://help.steampowered.com/es/?snr=1_44_44_">Soporte</a>
+                        		&nbsp; <span aria-hidden="true">|</span> &nbsp;<a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="">Tarjetas regalo</a>
+		&nbsp; <span aria-hidden="true">|</span> &nbsp;<a href="https://steamcommunity.com/linkfilter/?u=http%3A%2F%2Fwww.facebook.com%2FSteam" target="_blank" rel=" noopener"><img src="https://store.fastly.steamstatic.com/public/images/ico/ico_facebook.png" alt="Facebook"> Steam</a>
+		&nbsp; <span aria-hidden="true">|</span> &nbsp;<a href="http://twitter.com/steam" target="_blank" rel=""><img src="https://store.fastly.steamstatic.com/public/images/ico/ico_twitter.png" alt="X"> @steam</a>
+            </div>
+				<div class="extra_space"></div>
+	
+</div>
+</div>
+
+
+</div></div><div class="miniprofile_hover" style="display: none;"><div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div><div class="miniprofile_hover_inner shadow_content"></div></div><style>
+.replyButton {
+	width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.buttonGroup {
+	flex: 18%;
+	margin-left: 20px;
+	margin-right: 0px;
+}
+.cookieMessage {
+	flex: 85%;
+	margin: auto;
+}
+.popupTextTitle {
+	padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #c6d4df;
+}
+.popupTextTitle a {
+    text-decoration: underline;
+}
+.cookiepreferences_popup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 2000;
+	padding-top: 10px;
+}
+.cookiepreferences_popup_content {
+	display: flex;
+    box-sizing: border-box;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 16px 16px 10px 16px;
+    max-width: 980px;
+	background: linear-gradient(90.85deg, #333840 0.58%, #25282E 74.92%);
+	box-shadow: 0px 0px 10px #000000;
+    border-left: 2px solid #00CCFF;
+}
+@media all and (max-width: 910px) {
+    body.responsive_page .cookiepreferences_popup_content {
+        flex-direction: column;
+    }
+    body.responsive_page .cookiepreferences_popup_content .cookieMessage {
+        margin-bottom: 20px;
+    }
+    body.responsive_page .cookiepreferences_popup_content .buttonGroup {
+        flex-direction: row;
+        margin-left: 0px;
+    }
+    body.responsive_page .cookiepreferences_popup_content .buttonGroup .replyButton {
+        width: unset;
+    }
+}
+</style>
+
+<div id="cookiePrefPopup" class="cookiepreferences_popup">
+	<div class="cookiepreferences_popup_content">
+		<div class="cookieMessage">
+			<div class="popupTextTitle">¿Te parece bien que utilicemos cookies opcionales para sugerirte contenido personalizado y analizar el tráfico del sitio web?</div>
+			<div class="popupTextTitle">No utilizamos muchas cookies; puedes verlas y administrarlas en cualquier momento en la <a href="https://store.steampowered.com/account/cookiepreferences">página de configuración de cookies</a>. Si haces clic en «Aceptar todas», consientes el uso de cookies en los sitios web de Steam. Más información sobre las cookies en nuestra <a href="https://store.steampowered.com/privacy_agreement">Política de Privacidad</a>.</div>
+		</div>
+		<div class="buttonGroup">
+			<div id="acceptAllButton" class="btn_blue_steamui btn_medium replyButton"><span>Aceptar todas</span></div>
+			<div id="rejectAllButton" class="btn_grey_steamui btn_medium replyButton"><span>Rechazar todas</span></div>
+		</div>
+	</div>
+</div><div class="FullModalOverlay" style="display: none;"><div class="ModalOverlayContent ModalOverlayBackground"></div></div></body></html>

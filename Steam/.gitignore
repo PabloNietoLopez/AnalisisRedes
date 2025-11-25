@@ -1,0 +1,14 @@
+# Excluir la carpeta __pycache__
+__pycache__/
+
+# Excluir el archivo de configuración de pyenv
+.python-version
+
+# Excluir el entorno virtual
+.venv/
+
+# Ignorar la carpeta imagenes
+imagenes/
+
+# Ignorar todos los archivos PNG
+*.png

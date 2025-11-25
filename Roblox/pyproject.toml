@@ -1,0 +1,26 @@
+[project]
+name = "roblox"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+
+    "bs4>=0.0.2",
+
+    "click>=8.1.7",
+
+    "matplotlib>=3.10.0",
+    "networkx>=3.4.2",
+    "nltk>=3.9.1",
+
+    "pandas>=2.2.3",
+
+    "requests>=2.32.3",
+
+    "selenium>=4.27.1",
+
+    "textblob>=0.18.0.post0",
+
+    "webdriver-manager>=4.0.2",
+]

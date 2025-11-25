@@ -1,0 +1,5 @@
+# Excluir la carpeta __pycache__
+__pycache__/
+
+# Excluir la carpeta Imagenes
+Imagenes/
