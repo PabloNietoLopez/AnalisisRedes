@@ -1,4 +1,4 @@
-# Proyecto Final - Menú Principal
+# Analisis de Redes sociales - Menú Principal
 
 Este programa permite seleccionar y ejecutar diferentes entornos y funciones relacionadas con análisis y scraping de datos en los sistemas de **Roblox** y **Steam**.
 
